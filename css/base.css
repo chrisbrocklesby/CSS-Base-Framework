@@ -197,7 +197,7 @@ input[type="button"] {
   display: inline-block;
   height: 44px;
   padding: 0 30px;
-  color: var(--secondary-button-text-color);;
+  color: var(--secondary-button-text-color);
   text-align: center;
   font-size: 14px;
   font-weight: 600;
@@ -206,7 +206,7 @@ input[type="button"] {
   white-space: nowrap;
   background-color: transparent;
   border-radius: 3px;
-  border: 1px solid var(--secondary-button-text-color);;
+  border: 1px solid var(--secondary-button-text-color);
   cursor: pointer;
   box-sizing: border-box; }
 .button:hover,
