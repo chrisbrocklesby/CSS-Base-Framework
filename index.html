@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <title>CSS Base Framework</title>
+
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="theme-color" content="#2196f3">
+
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+
+<body>
+  <style>
+    .example-heading {
+      width: 100%;
+      border-bottom: 1px solid #CCCCCC;
+      margin: 40px 0;
+      padding-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      font-weight: 900;
+    }
+
+    .example-columns .columns,
+    .example-columns .column {
+      background-color: #dbdbdb;
+      color: #6b6b6b;
+      margin: 2px;
+      padding: 5px;
+      font-size: small;
+      border-radius: 3px;
+    }
+  </style>
+
+  <div class="container">
+    <h2 class="example-heading">Grids</h2>
+
+    <div class="example-columns">
+      <div class="row">
+        <div class="one column">One</div>
+        <div class="eleven columns">Eleven</div>
+      </div>
+      <div class="row">
+        <div class="two columns">Two</div>
+        <div class="ten columns">Ten</div>
+      </div>
+      <div class="row">
+        <div class="three columns">Three</div>
+        <div class="nine columns">Nine</div>
+      </div>
+      <div class="row">
+        <div class="four columns">Four</div>
+        <div class="eight columns">Eight</div>
+      </div>
+      <div class="row">
+        <div class="five columns">Five</div>
+        <div class="seven columns">Seven</div>
+      </div>
+      <div class="row">
+        <div class="six columns">Six</div>
+        <div class="six columns">Six</div>
+      </div>
+      <div class="row">
+        <div class="seven columns">Seven</div>
+        <div class="five columns">Five</div>
+      </div>
+      <div class="row">
+        <div class="eight columns">Eight</div>
+        <div class="four  columns">Four</div>
+      </div>
+      <div class="row">
+        <div class="nine columns">Nine</div>
+        <div class="three columns">Three</div>
+      </div>
+      <div class="row">
+        <div class="ten columns">Ten</div>
+        <div class="two columns">Two</div>
+      </div>
+      <div class="row">
+        <div class="eleven columns">Eleven</div>
+        <div class="one column">One</div>
+      </div>
+    </div>
+
+    <h2 class="example-heading">Typeface</h2>
+
+    <h1>Heading H1</h1>
+    <h2>Heading H2</h2>
+    <h3>Heading H3</h3>
+    <h4>Heading H4</h4>
+    <h5>Heading H5</h5>
+    <h6>Heading H6</h6>
+
+    <p>The base type is 15px over 1.6 line height (24px)</p>
+
+    <strong>Bolded</strong>
+    <em>Italicized</em>
+    <a href="#">Links</a>
+    <u>Underlined</u>
+
+    <h2 class="example-heading">Buttons</h2>
+
+    <a class="button" href="#">Anchor button</a>
+    <button>Button element</button>
+    <input type="submit" value="submit input">
+    <input type="button" value="button input">
+
+    <button class="button-primary full-width">Button full width</button>
+    <a class="button button-primary" href="#">Anchor button</a>
+    <button class="button-primary">Button element</button>
+
+    <input class="button-primary" type="submit" value="submit input">
+    <input class="button-primary" type="button" value="button input">
+
+    <h2 class="example-heading">Forms</h2>
+
+    <form>
+      <div class="row">
+        <div class="six columns">
+          <label for="email">Email Address</label>
+          <input class="full-width" type="email" placeholder="user@email.ext">
+        </div>
+        <div class="six columns">
+          <label class="message">Reason for message</label>
+          <select class="full-width">
+            <option value="Option 1">Questions</option>
+            <option value="Option 2">Admiration</option>
+            <option value="Option 3">Can I get your number?</option>
+          </select>
+        </div>
+      </div>
+      <label for="message">Message</label>
+      <textarea class="full-width" placeholder="Hello what a great form"></textarea>
+      <label class="send">
+        <input type="checkbox">
+        <span class="label-body">Send a copy</span>
+      </label>
+      <input class="button-primary" type="submit" value="Send">
+    </form>
+
+    <h2 class="example-heading">Lists</h2>
+
+    <ul>
+      <li>Item 1</li>
+      <li>
+        Item 2
+        <ul>
+          <li>Item 2.1</li>
+          <li>Item 2.2</li>
+        </ul>
+      </li>
+      <li>Item 3</li>
+    </ul>
+
+    <h2 class="example-heading">Code</h2>
+
+    <pre>
+    <code>
+      function myFunc() {
+        console.log("hello");
+        return
+      }
+    </code>
+  </pre>
+
+    <h2 class="example-heading">Table</h2>
+    <table class="full-width">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Sex</th>
+          <th>Location</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Tom Jones</td>
+          <td>65</td>
+          <td>Male</td>
+          <td>Wales</td>
+        </tr>
+        <tr>
+          <td>Hannah Thomas</td>
+          <td>22</td>
+          <td>Female</td>
+          <td>New Zealand</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</body>
+
+</html>
