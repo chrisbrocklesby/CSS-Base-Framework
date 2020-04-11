@@ -1,0 +1,19 @@
+{
+    "name": "App Name",
+    "short_name": "App",
+    "description": "A description of the app",
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#ffffff",
+    "background_color": "#fff",
+    "icons": [{
+        "src": "/images/google-192x192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+    },
+    {
+        "src": "/images/google-512x512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+    }]
+  }
