@@ -19,21 +19,27 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 :root {
   --body-background: #FFFFFF;
+  --form-text: #222222;
   --primary-text-color: #222222;
   --primary-link-color: #508cda;
   --primary-link-active-color: #222222;
   --primary-button-color: #508cda;
+  --primary-button-text-color: #FFFFFF;
   --secondary-button-color: #222222;
+  --secondary-button-text-color: #222222;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --body-background: #000000;
+    --form-text: #222222;
     --primary-text-color: #FFFFFF;
     --primary-link-color: #508cda;
     --primary-link-active-color: #222222;
     --primary-button-color: #508cda;
-    --secondary-button-color: #e0e0e0;
+    --primary-button-text-color: #FFFFFF;
+    --secondary-button-color: #FFFFFF;
+    --secondary-button-text-color: #FFFFFF;
   }
 }
 
@@ -189,18 +195,18 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"] {
   display: inline-block;
-  height: 42px;
+  height: 44px;
   padding: 0 30px;
-  color: var(--secondary-button-color);;
+  color: var(--secondary-button-text-color);;
   text-align: center;
   font-size: 14px;
   font-weight: 600;
-  line-height: 42px;
+  line-height: 44px;
   text-decoration: none;
   white-space: nowrap;
   background-color: transparent;
-  border-radius: 4px;
-  border: 1px solid var(--secondary-button-color);;
+  border-radius: 3px;
+  border: 1px solid var(--secondary-button-text-color);;
   cursor: pointer;
   box-sizing: border-box; }
 .button:hover,
@@ -213,15 +219,15 @@ button:focus,
 input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
-  color: var(--secondary-button-color);
-  border-color: var(--secondary-button-color);
+  color: var(--secondary-button-text-color);
+  border-color: var(--secondary-button-text-color);
   outline: 0; }
 .button.button-primary,
 button.button-primary,
 input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
-  color: #FFF;
+  color: var(--primary-button-text-color);
   background-color: var(--primary-button-color);
   border-color: var(--primary-button-color) }
 .button.button-primary:hover,
@@ -234,7 +240,7 @@ button.button-primary:focus,
 input[type="submit"].button-primary:focus,
 input[type="reset"].button-primary:focus,
 input[type="button"].button-primary:focus {
-  color: #FFF;
+  color: var(--primary-button-text-color);
   background-color: var(--primary-button-color);
   border-color: var(--primary-button-color); }
 
@@ -250,11 +256,12 @@ input[type="url"],
 input[type="password"],
 textarea,
 select {
-  height: 42px;
+  color: var(--form-text);
+  height: 44px;
   padding: 10px 14px;
-  background-color: #fff;
+  background-color: #FFFFFF;
   border: 1px solid #D1D1D1;
-  border-radius: 4px;
+  border-radius: 3px;
   box-shadow: none;
   box-sizing: border-box; }
 input[type="email"],
@@ -281,7 +288,7 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 textarea:focus,
 select:focus {
-  border: 1px solid #33C3F0;
+  border: 1px solid #222222;
   outline: 0; }
 label,
 legend {
@@ -330,7 +337,7 @@ code {
   font-size: 90%;
   white-space: nowrap;
   background: #000000;
-  border: 1px solid #E1E1E1;
+  border: 1px solid #D1D1D1;
   border-radius: 5px; }
 pre > code {
   display: block;
@@ -343,7 +350,7 @@ th,
 td {
   padding: 12px 15px;
   text-align: left;
-  border-bottom: 1px solid #E1E1E1; }
+  border-bottom: 1px solid #D1D1D1; }
 th:first-child,
 td:first-child {
   padding-left: 0; }
@@ -394,7 +401,7 @@ hr {
   margin-top: 3rem;
   margin-bottom: 3.5rem;
   border-width: 0;
-  border-top: 1px solid #E1E1E1; }
+  border-top: 1px solid #D1D1D1; }
 
 
 /* Clearing
