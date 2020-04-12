@@ -509,8 +509,6 @@ input:checked + .slider:before {
   border-radius: 3px;
   background: #CCCCCC;
   outline: none;
-  -webkit-transition: .2s;
-  transition: opacity .2s;
 }
 
 .slidecontainer .range-slider::-webkit-slider-thumb {
@@ -519,6 +517,7 @@ input:checked + .slider:before {
   width: 25px;
   height: 25px;
   border-radius: 50%;
+  border: none;
   background: var(--primary);
   cursor: pointer;
 }
