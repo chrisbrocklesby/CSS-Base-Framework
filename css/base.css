@@ -213,6 +213,15 @@ input[type="button"] {
   border: 1px solid var(--secondary-button-text-color);
   cursor: pointer;
   box-sizing: border-box; }
+  .button:active,
+  button:active,
+  input[type="submit"]:active,
+  input[type="reset"]:active,
+  input[type="button"]:active {
+    transform: translateY(1px);
+    opacity: 0.8
+  }
+
 .button:hover,
 button:hover,
 input[type="submit"]:hover,
