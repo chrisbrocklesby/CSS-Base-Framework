@@ -506,7 +506,7 @@ input:checked + .slider:before {
   -webkit-appearance: none;
   width: 100%;
   height: 15px;
-  border-radius: 3px;
+  border-radius: 50%;
   background: #CCCCCC;
   outline: none;
 }
